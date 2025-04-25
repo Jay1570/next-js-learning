@@ -21,9 +21,9 @@ export const ProductDetail = ({ products }) => {
     };
 
     return (
-        <ul className="space-y-4 p-4">
+        <div className="grid gap-6 p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
             {optimisticProducts.map((product) => (
-                <li
+                <div
                     key={product.id}
                     className="p-4 bg-white shadow-md rounded-lg text-gray-700"
                 >
@@ -42,8 +42,8 @@ export const ProductDetail = ({ products }) => {
                             Delete
                         </button>
                     </Form>
-                </li>
+                </div>
             ))}
-        </ul>
+        </div>
     );
 };
