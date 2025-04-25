@@ -18,6 +18,14 @@ export default function Home() {
             <Link href="/photo-feed" className="text-xl">
                 Go to Photo Feed
             </Link>
+            <br />
+            <Link href="/users" className="text-xl">
+                Go to Users
+            </Link>
+            <br />
+            <Link href="/products-db" className="text-xl">
+                Go to Products
+            </Link>
         </>
     );
 }
